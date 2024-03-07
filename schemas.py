@@ -9,8 +9,8 @@ class EmployeeBase(BaseModel):
 class EmployeeCreate(EmployeeBase):
     pass
 
-class EmployeeUpdate(EmployeeBase):
-    id: Optional[int]
+class EmployeeUpdate(BaseModel):
+    position: str
 
 class Employee(EmployeeBase):
     id: int
